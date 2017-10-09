@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Book {
@@ -14,7 +17,7 @@ public class Book {
 	String title, author;
 	int year, isbn;
 	double price;	
-	
+
 	public Book() {
 	}
 
