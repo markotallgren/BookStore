@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.Bookstore.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.domain.Book;
-import com.example.domain.BookRepository;
+import com.example.Bookstore.domain.Book;
+import com.example.Bookstore.domain.BookRepository;
 
 @Controller
 public class BookController {

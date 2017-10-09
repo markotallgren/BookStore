@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.Bookstore.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

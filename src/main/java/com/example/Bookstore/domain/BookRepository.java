@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.Bookstore.domain;
 
 import java.util.List;
 

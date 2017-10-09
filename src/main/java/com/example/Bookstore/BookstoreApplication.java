@@ -9,11 +9,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.example.domain.Book;
-import com.example.domain.BookRepository;
-import com.example.domain.User;
-import com.example.domain.UserRepository;
-
+import com.example.Bookstore.domain.Book;
+import com.example.Bookstore.domain.BookRepository;
+import com.example.Bookstore.domain.User;
+import com.example.Bookstore.domain.UserRepository;
 
 @SpringBootApplication
 public class BookstoreApplication {
@@ -24,7 +23,7 @@ public class BookstoreApplication {
 	}
 	
 	@Bean
-	public CommandLineRunner bookDemo(BookRepository repository, UserRepository urepository) {
+	public CommandLineRunner books(BookRepository repository, UserRepository urepository) {
 		return (args) -> {
 			repository.save(new Book("Mein kampf", "Adolf Hitler", 1925, 4545, 70));
 			repository.save(new Book("The Art of the Deal", "Donald J. Trump", 1987, 1919, 500));
@@ -33,6 +32,7 @@ public class BookstoreApplication {
 					"$2a$04$XKOacv.fDAbYIAMQpJqrC.TLkkccfM0E5XlDL.f728nsaYOJC3Ih6", "USER");
 			User user2 = new User("admin",
 					"$2a$04$5kVFc/24QnAn659O3KesPORGE.4umazfqnS0rUzESBK6rUJSC.Yyi", "ADMIN");
+			
 			
 			urepository.save(user1);
 			urepository.save(user2);
