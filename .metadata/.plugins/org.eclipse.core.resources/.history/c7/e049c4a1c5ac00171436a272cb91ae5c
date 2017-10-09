@@ -1,0 +1,3 @@
+spring.jpa.properties.hibernate.show_sql=true
+
+spring.data.rest.basePath=/api
